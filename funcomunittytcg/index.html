@@ -296,6 +296,10 @@ main {
             Collection
         </button>
 
+        <button onclick="submissions()">
+            Send a card submission
+        </button>
+
     </nav>
 
 </header>
@@ -436,6 +440,12 @@ main {
 SETTINGS
 ==================================================
 */
+
+ function submissions() {
+    if(confirm("This'll go to a seperate page, would you like to continue?") == true) {
+        window.location.href=("https://docs.google.com/forms/d/e/1FAIpQLSfDH0-1OgEck7Yox3XTYGqb6JgvlPOIRjyF4S7FoTzOcqyY1Q/viewform?usp=publish-editor");
+    }
+}
 
 
 const TOTAL_CARDS = 22;
